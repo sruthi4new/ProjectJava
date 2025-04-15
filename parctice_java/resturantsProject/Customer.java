@@ -13,7 +13,6 @@ public class Customer extends Resturant
 		order.put("idli",4);
 		order.put("dosa",2);
 		order.put("upma",5);
-		order.put("uppam",10);
 	}
 	
 	void diplaymenu() 
@@ -45,7 +44,20 @@ public class Customer extends Resturant
 		 else 
 	        {
 		        System.out.println("total payable is : "+" "+totalBill);
-	        }
+	        } 
+	}
+		void displayReservation() 
+	{
+		System.out.println("RESERVATION DETAILS");
+		System.out.println("TIME :"+reservationTime+" "+"TABLE :"+tableNumber+" "+"VIP :"+isVIP);
+		
+		if (isVIP==true) {
+			System.out.println("We have reserved your seat in prior as you like it");
+		}
+		else {
+			System.out.println("Your seat is confirmed");
+		}
+			
 
 	}
 }
