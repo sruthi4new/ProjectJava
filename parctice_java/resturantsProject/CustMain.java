@@ -6,9 +6,10 @@ public class CustMain {
 		// TODO Auto-generated method stub
 		Resturant rs = new Resturant();
 		//rs.display();
-		Customer cs = new Customer();
-		cs.diplaymenu();
-		cs.displayorder();
+		Customer c1 = new Customer("7:30 pm" , 5 , true);
+		 c1.displayReservation();
+		 c1.displayorder();
+
 
 	}
 
